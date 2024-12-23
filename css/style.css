@@ -1,0 +1,329 @@
+:root {
+    --bg-color: #a23f25;
+    --bg-light: #ab4227;
+    --text-color: #fff;
+    --span-color: #b7472a;
+    --heading-color: #000000;
+    --para-color: #808080;
+    --text-light: #FFFFFF99;
+    --background-light: #F5F4F0;
+    --span-light-color: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Spectral SC", serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.py {
+    padding: 100px 0;
+}
+
+.w-1 {
+    width: 100%;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-3 {
+    width: 33.33%;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+.w-5 {
+    width: 20%;
+}
+
+/* header section  */
+
+.topbar {
+    background-color: var(--bg-color);
+}
+
+.topbar .topbar-content a , .topbar .social-media a , i{
+    color: var(--text-light);
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+/* navigation section  */
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../images/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* banner section  */
+
+.banner .banner-title {
+    height: 733px;
+    rotate: -5deg;
+}       
+
+.banner .banner-title h2 {
+    width: 58%;
+}
+
+.banner .banner-btn .special {
+    background-color: var(--span-color);
+    border: 1px solid var(--span-color);
+}
+
+.banner .banner-btn a {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--text-light);
+}
+
+.banner .banner-btn a:hover {
+    background-color: var(--span-color);
+    border: 1px solid var(--span-color);
+}
+
+/* help section  */
+
+.help {
+    background-color: var(--span-color);
+}
+
+.help .help-content .text p {
+    width: 67%;
+}
+
+.help .second {
+    background-color: var(--bg-light);
+}
+
+.help .third {
+    background-color: var(--bg-color);
+}
+
+/* about section  */
+
+.about .about-content img {
+    height: 570px;
+    width: 512px;
+}
+
+.about .about-content span {
+    color: var(--span-color);
+}
+
+.about .about-content p {
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* info section  */
+
+.info .info-content img {
+    height: 130px;
+    width: 130px;
+    border: 1px solid var(--bg-color); 
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.info .info-content:hover img {
+    border: 0px;
+}
+
+.info .info-content::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.637);
+    border: 1px solid var(--text-light);
+    height: 110px;
+    width: 110px;
+    top: 10px;
+    left: 35px;
+    z-index: 1;
+    border-radius: 50%;
+    transform: scale(100%);
+    transition: transform 0.5s ease;
+    visibility: hidden;
+}
+
+.info .info-content:hover::before {
+    visibility: visible;
+    transform: scale(80%);
+}
+
+/* selling section  */
+
+.selling .selling-title span {
+    color: var(--span-color);
+}
+
+.selling .selling-content .selling-image .icons i {
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid var(--para-color);
+    color: var(--text-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.selling .selling-content .selling-image::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.selling .selling-content .selling-image:hover::before {
+    opacity: 1;
+}
+
+.selling .selling-content:hover .icons i {
+    opacity: 1;
+}
+
+.selling .selling-btn a {
+    background-color: var(--span-color);
+    padding: 0 100px;
+}
+
+/* testimonial section  */
+
+.testimonial::after {
+    content: '';
+    position: absolute;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/bg_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.testimonial .testimonial-content {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonial .testimonial-content .quote {
+    top: -17px;
+    left: 10px;
+}
+
+.testimonial .testimonial-content .quote i {
+    font-size: 22px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+/* blog section  */
+
+.blog .blog-title span {
+    color: var(--bg-color);
+}
+
+.blog .blog-content .blog-details {
+    background-color: var(--background-light);
+    padding: 35px 0;
+}
+
+.blog .blog-content a img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog .blog-content .blog-details span, .blog .blog-content .blog-details i {
+    color: var(--span-light-color);
+}
+
+.blog .blog-content .blog-details h4 {
+    transition: all 0.3s;
+}
+
+.blog .blog-content .blog-details h4:hover {
+    color: var(--bg-color);
+}
+
+.blog .blog-content .blog-details p {
+    color: var(--span-light-color);
+    font-size: 18px;
+}
+
+.blog .blog-content .blog-details a , .blog .blog-content .blog-details i {
+    color: var(--bg-color);
+
+}
+
+/* footer section  */
+
+.footer .footer-content .footer-address p {
+    color: var(--text-light);
+    font-size: 18px;
+}
+
+.footer .footer-content .footer-address .icons i {
+    color: var(--text-light);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+}
+
+.footer .footer-content .footer-account h5 , .footer .footer-content .footer-question h5{
+    color: var(--text-light);
+}
+
+.footer .footer-content .footer-account ul li a {
+    color: var(--text-light);
+    margin: 5px 0;
+}
+
+.footer .footer-content .footer-account ul li a i {
+    font-size: 20px;
+    color: var(--text-light);
+}
+
+.footer .footer-content .footer-question p {
+    color: var(--text-light);
+}
+
+.footer .footer-content .footer-question p i {
+    color: var(--text-light);
+    font-size: 20px;
+}
+
+/* end of this website  */
